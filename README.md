@@ -131,7 +131,9 @@ ProductDetailHeader
 ProductDescriptionView
 ProductPriceInfoView
 
-📝 However, one drawback of this naming convention is that the class names can become too long. A better alternative is to use the private access modifier.
+However, one drawback of this naming convention is that the class names can become too long. 
+
+📝 A better alternative is to use the private access modifier.
 
 ```dart
 part of '../product_detail_screen.dart';
