@@ -131,7 +131,7 @@ ProductDetailHeader
 ProductDescriptionView
 ProductPriceInfoView
 
-However, one drawback of this naming convention is that the class names can become too long. A better alternative is to use the private access modifier.
+📝 However, one drawback of this naming convention is that the class names can become too long. A better alternative is to use the private access modifier.
 
 ```dart
 part of '../product_detail_screen.dart';
@@ -153,6 +153,6 @@ class _Header extends StatelessWidget {
 }
 ```
 
-By using the access modifier, you can specify a class name, preventing other pages from importing that header module, making widget modularization more reliable.
+💡 By using the access modifier, you can specify a class name, preventing other pages from importing that header module, making widget modularization more reliable.
 
 ![image](https://github.com/YamamotoDesu/clean_ui_code_implementation/assets/47273077/d69dd91a-8c97-411b-95e0-c88486ecc346)
