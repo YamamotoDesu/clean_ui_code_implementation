@@ -154,4 +154,5 @@ class _Header extends StatelessWidget {
 ```
 
 By using the access modifier, you can specify a class name, preventing other pages from importing that header module, making widget modularization more reliable.
+
 ![image](https://github.com/YamamotoDesu/clean_ui_code_implementation/assets/47273077/d69dd91a-8c97-411b-95e0-c88486ecc346)
