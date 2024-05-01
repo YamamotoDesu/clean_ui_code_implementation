@@ -85,3 +85,39 @@ class ProductDetailScaffold extends StatelessWidget {
   }  
 }
 ```
+
+### 3. Widget Modularization
+Before applying the Scaffold, you need to extract each widget separated by section into individual Stateless Widgets.
+
+```dart
+/// Extracted as a Stateless Widget (O)
+class ProductDetailHeader extends StatelessWidget {  
+  const ProductDetailHeader({Key? key}) : super(key: key);  
+  
+  @override  
+  Widget build(BuildContext context) {  
+    return Container(  
+      height: 386,  
+      decoration: BoxDecoration(  
+        image: DecorationImage(  
+            image: Image.asset(Assets.imagesProductImg0).image,  
+            fit: BoxFit.fitHeight),  
+      ),  
+    );  
+  }  
+}
+
+/// Extracted as a method (X)
+_buildHeader() {
+    return Container(  
+      height: 386,  
+      decoration: BoxDecoration(  
+        image: DecorationImage(  
+            image: Image.asset(Assets.imagesProductImg0).image,  
+            fit: BoxFit.fitHeight),  
+      ),  
+    ); 
+}
+```
+
+When extracting a section, it’s important to extract it as a StatelessWidget rather than a method. This is because extracting it as a StatelessWidget allows you to separate the BuildContext, preventing the use of shared context in the widget tree.
