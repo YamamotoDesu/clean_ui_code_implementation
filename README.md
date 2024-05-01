@@ -90,7 +90,7 @@ class ProductDetailScaffold extends StatelessWidget {
 Before applying the Scaffold, you need to extract each widget separated by section into individual Stateless Widgets.
 
 ```dart
-/// Extracted as a Stateless Widget (O)
+/// Extracted as a Stateless Widget (🙆‍♂️)
 class ProductDetailHeader extends StatelessWidget {  
   const ProductDetailHeader({Key? key}) : super(key: key);  
   
@@ -107,7 +107,7 @@ class ProductDetailHeader extends StatelessWidget {
   }  
 }
 
-/// Extracted as a method (X)
+/// Extracted as a method (🙅‍♂️)
 _buildHeader() {
     return Container(  
       height: 386,  
