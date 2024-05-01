@@ -2,7 +2,16 @@
 
 ### 1. Section Definition
 
-2. Create Custom Scaffold Module
+- Header
+- Leading Information
+- Image List
+- Size Information
+- Description
+- Review
+- Price Information
+- Bottom Fixed Button (Add to Cart button)
+
+### 2. Create Custom Scaffold Module
 
 Custom Scaffold Module
 ```dart
