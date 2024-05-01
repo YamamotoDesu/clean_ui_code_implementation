@@ -121,3 +121,4 @@ _buildHeader() {
 ```
 
 When extracting a section, it’s important to extract it as a StatelessWidget rather than a method. This is because extracting it as a StatelessWidget allows you to separate the BuildContext, preventing the use of shared context in the widget tree.
+If the BuildContext is not separated, widgets that are unrelated to the state can be rebuilt together when a state change occurs in a different widget. Using StatelessWidget helps to minimize widget rebuilds.
