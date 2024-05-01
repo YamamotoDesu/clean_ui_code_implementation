@@ -1,4 +1,7 @@
 ## Clean Your UI Code in Flutter
+Benefits of Clean UI Code
+- Ease of Maintenance
+- Collaboration-Friendly
 
 ### 1. Section Definition
 
